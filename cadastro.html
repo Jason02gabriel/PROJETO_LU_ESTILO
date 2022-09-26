@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="application/javascript" src = 'js/main.js'></script>
+<!-- formulario para enviar os dados para api -->
+<form onsubmit="cadastrar()">
+    <!-- input para receber o User_Name -->
+    <label for="User_name">User_name</label>
+    <br>
+    <input type="text" id="User_name" name="User_name" placeholder="User_name">
+    </br>
+    <!-- input para receber o Password -->
+    <label for="Password">Password</label>
+     <br>
+    <input type="password" id="Password" name="Password" placeholder="Password">
+    </br>
+    <!-- input para receber o nome-->
+    <label for="nome">Nome</label>
+     <br>
+    <input type="text" id="nome" name="Nome" placeholder="">
+    </br>
+    <!-- input para receber o CPF   -->
+    <label for="cpf">CPF</label>
+     <br>
+    <input type="number" id="cpf" name="cpf" placeholder="">
+    </br>
+    <!-- input para receber o Numero de Telefone -->
+    <label for="phone">Phone</label>
+     <br>
+    <input type="number" id="phone" name="phone" placeholder="">
+    </br>
+    <!-- input para receber a Data de Nascimento-->
+     <label for="date">Date</label>
+     <br>
+    <input type="datetime-local" id="date" name="date" placeholder="">
+
+    <br><br><br>
+    <!-- input para receber cidade do usuario  -->
+   <label for="cidade">Cidade</label>
+     <br>
+    <input type="text" id="cidade" name="cidade" placeholder="">
+    </br>
+    <!-- input para receber o estado do usuario -->
+    <label for="estado">estado</label>
+     <br>
+    <input type="text" id="estado" name="estado" placeholder="">
+    </br>
+    <!-- input para receber o bairro do usuario -->
+    <label for="bairro">Bairro</label>
+     <br>
+    <input type="text" id="bairro" name="bairro" placeholder="">
+    </br>
+    <!-- input para receber oa rua do usuario -->
+    <label for="rua">Rua</label>
+     <br>
+    <input type="text" id="rua" name="Rua" placeholder="">
+    </br>
+    <!-- input para receber o numero da casa do usuario -->
+    <label for="numero">Numero</label>
+     <br>
+    <input type="number" id="numero" name="numero" placeholder="">
+    </br>
+    <!-- input para receber o complemento do endereço-->
+    <label for="complemento">Complemento</label>
+     <br>
+    <input type="text" id="complemento" name="complemento" placeholder="">
+    </br>
+    <!-- input para receber o cep do usuario -->
+    <label for="cep">Cep</label>
+     <br>
+    <input type="number" id="cep" name="cep" placeholder="">
+    </br>
+    <!-- input para receber o select  -->
+    <label for="select">Select</label>
+     <br>
+    <select class="form-control" name="address.consumer" id="select">
+            <option value="1"  >20139439382</option>
+            <option value="2"  >43469466319</option>
+            <option value="3"  >87045498306</option>
+            <option value="4"  >06089981338</option>
+            <option value="5"  >02860390367</option>
+    </select>
+    </br>
+    <br>
+    <!-- botão para enviar os dados -->
+    <button type="submit">Cadastrar</button>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
