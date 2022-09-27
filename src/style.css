@@ -1,0 +1,57 @@
+.container {
+            display: flex;
+            justify-content: center;
+
+
+            margin: auto;
+            }
+
+input {
+            height: auto;
+          width: 300px;
+          padding: 5px 10px;
+          margin:auto;
+          box-sizing: border-box;
+
+}
+
+
+.teste1{
+    display: block;
+    margin-top: -450px;
+    visibility: hidden;
+    opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+
+}
+.teste2{
+    display: block;
+    margin-top: -290px;
+    visibility: visible;
+    opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s linear;
+
+}
+.teste3{
+    display: block;
+    visibility: hidden;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s linear;
+
+}
+
+.form-control{
+   height: auto;
+          width: 300px;
+          padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
