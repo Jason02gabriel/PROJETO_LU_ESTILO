@@ -1,17 +1,32 @@
+body{
+    background-color: #3C589C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
 .container {
             display: flex;
             justify-content: center;
-
-
             margin: auto;
+
             }
 
 input {
-            height: auto;
-          width: 300px;
+        height: 50px;
+          width: 350px;
           padding: 5px 10px;
           margin:auto;
           box-sizing: border-box;
+    border-radius: 10px ;
+
+}
+
+.login_page{
+
+
+    opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s linear;
 
 }
 
@@ -19,15 +34,15 @@ input {
 .teste1{
     display: block;
     margin-top: -450px;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
   transition: visibility 0.5s, opacity 0.5s linear;
 
 }
 .teste2{
     display: block;
     margin-top: -290px;
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
   transition: visibility 0.5s, opacity 0.5s linear;
 
@@ -42,14 +57,19 @@ input {
 
 .form-control{
    height: auto;
-          width: 300px;
+          width: 350px;
           padding: 10px 10px;
 }
 
 
 
+#btn1{
+    width: 100%;
+}
 
-
+#btn2{
+    width: 100%;
+}
 
 
 
