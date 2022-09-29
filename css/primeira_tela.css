@@ -49,10 +49,12 @@ body{
 /* Cabeçalho */
 
 #header{
+    min-width: 562px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 10px 80px;
     background-color: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -101,10 +103,20 @@ body{
     left: 20px;
 
 }
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+    align-items: center;
+}
 
 /* Pagina Principal(Home Page)*/
 
 #hero{
+
+    min-width: 562px;
     background-image: url("../img/hero4.png");
     height: 90vh;
     width: 100%;
@@ -156,7 +168,7 @@ body{
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
-     border-radius: 25px;
+    border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     margin: 15px 0;
@@ -217,3 +229,81 @@ body{
     bottom: 20px;
     right: 10px;
 }
+
+/* midia Query */
+
+/* deixar o site responsivo */
+
+@media(max-width:799px){
+   #navbar {
+    display: flex;
+       flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+       position: fixed;
+       top: 0;
+       right: -300px;
+       height: 100vh;
+       width: 300px;
+       background-color: #E3E6F3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+       padding: 80px 0 0 10px;
+        transition: 0.3s ease;
+
+
+}
+    #navbar.active{
+        right: 0px;
+
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+    display: flex;
+    align-items: center;
+
+}
+ #mobile i {
+    color: black;
+     font-size: 25px;
+    padding-left: 20px;
+}
+ #close{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 25px;
+    color: black;
+     display: initial;
+ }
+ #cart2{
+    display: none;
+ }
+
+element.style {
+}
+#hero {
+    min-width: 250px;
+
+    height: 70vh;
+   background-position: top 30% right 30%;
+    padding: 0 88px;
+
+}
+#header{
+    min-width: 250px;
+
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin: 0 80px;
+}
+}
+
+
+
