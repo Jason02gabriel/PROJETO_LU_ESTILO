@@ -131,3 +131,10 @@
     }
 
 }
+
+#alert_login_ok{
+    display: none;
+}
+#alert_login_error{
+    display: none;
+}

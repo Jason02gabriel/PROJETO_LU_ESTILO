@@ -115,6 +115,12 @@ function ocultar_div2() {
 }
 
 function login(){
+const sleep = time => new Promise(resolve =>{
+    setTimeout(() => resolve(), time);
+})
+
+
+
 let Nome1 = document.getElementById("User_name2").value
 let password2 = document.getElementById("Password2").value
 let raw = "{\n    \"username\": \""+Nome1+"\",\n    \"password\": \""+password2+"\"\n}";
@@ -130,19 +136,27 @@ fetch("http://159.89.176.78:8001/login/consumidor/", requestOptions)
 
   .then((response) =>{
     if (response.status === 200) {
+        async function espera(){
+        document.getElementById("alert_login_ok").style.display = "flex";
+        await sleep(2000);
         console.log(response.status)
         window.location.href = "primeira_pagina.html";
         
         return response.text();
-        
+        }
+        espera();
     }
     
 else {
-    
-    
+    async function espera(){
+    document.getElementById("alert_login_error").style.display = "flex";
+    await sleep(2000);
+    document.getElementById("alert_login_error").style.display = "none";
     console.log(Nome1);
     
     return response.text();
+    }
+    espera();
     
 }}
   )
