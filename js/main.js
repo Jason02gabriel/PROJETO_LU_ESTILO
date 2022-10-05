@@ -150,7 +150,11 @@ fetch("http://159.89.176.78:8001/login/consumidor/", requestOptions)
 else {
     async function espera(){
     document.getElementById("alert_login_error").style.display = "flex";
-    await sleep(2000);
+    document.getElementById("User_name2").style.color = "red";
+    document.getElementById("Password2").style.color = "red";
+    await sleep(4000);
+    document.getElementById("User_name2").style.color = "black";
+    document.getElementById("Password2").style.color = "black";
     document.getElementById("alert_login_error").style.display = "none";
     console.log(Nome1);
     

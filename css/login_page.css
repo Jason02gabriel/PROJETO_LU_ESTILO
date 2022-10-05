@@ -134,7 +134,11 @@
 
 #alert_login_ok{
     display: none;
+    transition: 2s;
 }
 #alert_login_error{
+    
     display: none;
+    
 }
+
