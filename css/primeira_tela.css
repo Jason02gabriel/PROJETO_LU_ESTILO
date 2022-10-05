@@ -136,6 +136,8 @@ body {
 #hero h4 {
 
     padding: 15px;
+    
+    
 }
 
 #hero h1 {
@@ -302,14 +304,15 @@ body {
     element.style {}
 
     #hero {
-        ba background-size: cover;
+        background-size: cover;
         align-items: flex-start;
         min-width: 799px;
         height: 80vh;
         background-position: top 75% right 100%;
-        padding: 0 88px;
+        padding: 0 10px;
 
     }
+
 
 
     #header {

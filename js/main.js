@@ -113,3 +113,41 @@ function ocultar_div2() {
     document.getElementById("teste3").style.opacity = "0";
 
 }
+
+function login(){
+let Nome1 = document.getElementById("User_name2").value
+let password2 = document.getElementById("Password2").value
+let raw = "{\n    \"username\": \""+Nome1+"\",\n    \"password\": \""+password2+"\"\n}";
+
+var requestOptions = {
+  method: 'POST',
+  body: raw,
+  headers: {"Content-type": "application/json; charset=UTF-8"},
+  redirect: 'follow'
+};
+
+fetch("http://159.89.176.78:8001/login/consumidor/", requestOptions)
+
+  .then((response) =>{
+    if (response.status === 200) {
+        console.log(response.status)
+        window.location.href = "primeira_pagina.html";
+        
+        return response.text();
+        
+    }
+    
+else {
+    
+    
+    console.log(Nome1);
+    
+    return response.text();
+    
+}}
+  )
+  .then(result => console.log(result))
+  
+}
+
+login();
