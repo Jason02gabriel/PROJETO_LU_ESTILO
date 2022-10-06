@@ -168,4 +168,91 @@ else {
   
 }
 
-login();
+
+
+
+fetch('http://159.89.176.78:8001/produtos/')
+.then((resposta)=> resposta.json()
+
+.then((data)=> 
+        dado(data)
+)
+
+)
+function dado(dados){
+    //imagens dos produtos
+    let img1 = document.querySelector('#imagem1');
+    img1.src = dados[0].images[0].image
+
+    let img2 = document.querySelector('#imagem2');
+    img2.src = dados[1].images[1].image
+
+    let img3 = document.querySelector('#imagem3');
+    img3.src = dados[2].images[0].image
+
+    let img4 = document.querySelector('#imagem4');
+    img4.src = dados[4].images[0].image
+
+    let img5 = document.querySelector('#imagem5');
+    img5.src = dados[5].images[0].image
+
+    let img6 = document.querySelector('#imagem6');
+    img6.src = dados[6].images[0].image
+
+    let img7 = document.querySelector('#imagem7');
+    img7.src = dados[7].images[0].image
+
+    //nome produto
+    let pt1 = document.querySelector('#pt1');
+    pt1.innerHTML = dados[0].short_description
+
+    let pt2 = document.querySelector('#pt2');
+    pt2.innerHTML = dados[1].short_description
+
+    let pt3 = document.querySelector('#pt3');
+    pt3.innerHTML = dados[2].short_description
+
+    let pt4 = document.querySelector('#pt4');
+    pt4.innerHTML = dados[4].short_description
+
+    let pt5 = document.querySelector('#pt5');
+    pt5.innerHTML = dados[5].short_description
+
+    let pt6 = document.querySelector('#pt6');
+    pt6.innerHTML = dados[6].short_description
+
+    let pt7 = document.querySelector('#pt7');
+    pt7.innerHTML = dados[7].short_description
+    
+    //preço do produto
+    let preço_pt1 = document.querySelector('#preço_pt1');
+    preço_pt1.innerHTML = `R$${dados[0].stocks[0].unit_price},00`
+
+    let preço_pt2 = document.querySelector('#preço_pt2');
+    preço_pt2.innerHTML = `R$${dados[1].stocks[0].unit_price},00`
+
+    let preço_pt3 = document.querySelector('#preço_pt3');
+    preço_pt3.innerHTML = `R$${dados[2].stocks[0].unit_price},00`
+
+    let preço_pt4 = document.querySelector('#preço_pt4');
+    preço_pt4.innerHTML = `R$${dados[4].stocks[0].unit_price},00`
+
+    let preço_pt5 = document.querySelector('#preço_pt5');
+    preço_pt5.innerHTML = `R$${dados[5].stocks[0].unit_price},00`
+
+    let preço_pt6 = document.querySelector('#preço_pt6');
+    preço_pt6.innerHTML = `R$${dados[6].stocks[0].unit_price},00`
+
+    let preço_pt7 = document.querySelector('#preço_pt7');
+    preço_pt7.innerHTML = `R$${dados[7].stocks[0].unit_price},00`
+
+
+   
+
+
+
+
+
+    
+
+}
