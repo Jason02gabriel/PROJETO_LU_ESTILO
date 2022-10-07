@@ -246,13 +246,4 @@ function dado(dados){
     let preço_pt7 = document.querySelector('#preço_pt7');
     preço_pt7.innerHTML = `R$${dados[7].stocks[0].unit_price},00`
 
-
-   
-
-
-
-
-
-    
-
 }
