@@ -121,10 +121,10 @@ const sleep = time => new Promise(resolve =>{
 
 
 
-let Nome1 = document.getElementById("User_name2").value
-let password2 = document.getElementById("Password2").value
-let raw = "{\n    \"username\": \""+Nome1+"\",\n    \"password\": \""+password2+"\"\n}";
-
+const Nome1 = document.getElementById("User_name2").value
+const password2 = document.getElementById("Password2").value
+const raw = "{\n    \"username\": \""+Nome1+"\",\n    \"password\": \""+password2+"\"\n}";
+const lista = []
 var requestOptions = {
   method: 'POST',
   body: raw,
@@ -135,14 +135,15 @@ var requestOptions = {
 fetch("http://159.89.176.78:8001/login/consumidor/", requestOptions)
 
   .then((response) =>{
+    return response.json()
     if (response.status === 200) {
         async function espera(){
         document.getElementById("alert_login_ok").style.display = "flex";
+       
         await sleep(2000);
-        console.log(response.status)
+        
         window.location.href = "primeira_pagina.html";
         
-        return response.text();
         }
         espera();
     }
@@ -158,14 +159,20 @@ else {
     document.getElementById("alert_login_error").style.display = "none";
     console.log(Nome1);
     
-    return response.text();
     }
     espera();
     
-}}
-  )
-  .then(result => console.log(result))
-  
+}
+return response.json()
+}
+  ).then(result => {
+    lista = lista.push({result: result});
+    
+  }
+    )
+    
+    console.log(lista);
+    id_consumidor(lista[0][result])
 }
 
 
@@ -176,6 +183,7 @@ fetch('http://159.89.176.78:8001/produtos/')
 
 .then((data)=> 
         dado(data)
+        
 )
 
 )
@@ -246,4 +254,34 @@ function dado(dados){
     let preço_pt7 = document.querySelector('#preço_pt7');
     preço_pt7.innerHTML = `R$${dados[7].stocks[0].unit_price},00`
 
+}
+function id_consumidor(id){
+    let id_consumidor = id
+}
+
+fetch(`http://159.89.176.78:8001/enderecos/?consumer__id=`).then(resposta => resposta.json()
+    
+    .then(data =>
+        
+        dados_consumidor(data)
+        
+        )
+    
+    
+    
+    
+    )
+
+function dados_consumidor(dados){
+    
+    const endereco_consumidor = document.getElementById('btn_endereco');
+
+    endereco_consumidor.innerHTML = `<p>
+    ${dados[0].street} , ${dados[0].number} -  ${dados[0].cep} /  ${dados[0].city.name} -  ${dados[0].city.uf}
+    
+    
+    
+    </p> 
+    
+    `
 }

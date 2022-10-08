@@ -23,7 +23,7 @@
       <ul id="navbar">
         <li><a href="primeira_pagina.html" class="active">HOME</a></li>
         <li><a href="acesso.html">CONTA</a></li>
-        <li><a href="cart.html"><i class="fas fa-shopping-cart " id="cart2"></i></a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart " id="cart2"><i id="qtd_pedido"></i></i></a></li>
         <a href="#" id="close"><i class="far fa-times-circle"></i></a>
       </ul>
     </div>
@@ -60,7 +60,7 @@
         <option>Ultra G</option>
       </select>
       <input type="number" value="1">
-      <button type="button" class="normal">Adicionar ao Carrinho</button>
+      <button type="button" class="normal" id="botao_adicionar" onclick="adiciona_carrinho()">Adicionar ao Carrinho</button>
       <h4>Detalhes do Produto</h4>
       <span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
     </div>

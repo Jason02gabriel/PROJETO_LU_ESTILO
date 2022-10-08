@@ -79,5 +79,68 @@ input {
 }
 
 
+#retirar_loja{
+  color: black;
+  background-color: white;
+  width: 355px;
+  height: 50px;
+  margin-bottom: 10px;
+  
+ 
 
 
+}
+
+#btnaddadress{
+  color: black;
+  background-color: white;
+  width: 355px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#btn_endereco{
+  color: black;
+  background-color: white;
+  width: 355px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+
+/* alinhar circulo no canto do botao */
+#circle{
+  
+position: relative;
+   top: 0px;
+   right: 100px;
+   color: black;
+   
+  
+  
+  
+}
+
+#adicionar_endereco{
+  
+  position: relative;
+     top: 0px;
+     right: 80px;
+     color: black;
+     
+    
+    
+    
+  }
+  #teste4{
+    visibility: hidden;
+  }
+
+  #pix{
+    color: black;
+    background-color: white;
+    width: 355px;
+    height: 50px;
+    margin-bottom: 10px;
+    
+  }

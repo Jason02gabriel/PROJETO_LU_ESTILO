@@ -75,3 +75,16 @@ if (close) {
 
 
         }        
+
+function adiciona_carrinho(){
+    let contador = 0
+    
+    
+        contador++;
+        document.getElementById('qtd_pedido').innerHTML = contador;
+    
+
+
+
+
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_page.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+<script type="application/javascript" src = 'js/main.js'></script>
+<div class="container" id="logreg-forms">
+<!-- formulario para enviar os dados para api -->
+
+    <form onsubmit="">
+
+        <div id="passo_confirme_dados">
+     <h1 id="passo">Finalizando Compra</h1>
+        <p id="confirme">confira as informações abaixo antes de finalizar a compra do produto</p>
+        <p id="dados">Onde você quer receber?</p>
+            </div>
+
+
+
+        <!-- input para receber o User_Name -->
+            <div class="teste3" id="teste3">
+        <label for="User_name">Nome de usuario</label>
+        <br>
+        <input type="text" id="User_name" name="User_name" placeholder="(xx) xxxxx-xxxx">
+        </br><br>
+
+        <!-- input para receber o Password -->
+        <label for="Password">Senha</label>
+         <br>
+        <input type="password" id="Password" name="Password" placeholder="Insira sua senha aqui">
+        </br><br>
+                <div class="d-grid gap-2">
+      <button class="btn-lg btn-success" type="submit" id="proximo3">Proximo</button>
+            <button class="btn-lg btn btn-danger" type="button"id="voltar3" onclick="ocultar_div2()">Voltar</button>
+    </div>
+
+
+                </div >
+        <div class="teste2" id="teste2">
+       
+        <button type="button" id="pix"> <i class="far fa-circle" id="circle"></i></i>PIX</button>
+        <br><br>
+        <label for="">Pagar na entrega</label>
+        <br><br>
+        <button type="button" id="pix"> <i class="far fa-circle" id="circle"></i></i>Cartão de Credito</button>
+        <!-- input para receber o Numero de Telefone -->
+        <button type="button" id="pix"> <i class="far fa-circle" id="circle"></i></i>Dinheiro</button>
+         <br>
+       
+        </br><br>
+        
+         
+         <br>
+        
+        <br><br>
+
+        <div class="d-grid gap-2">
+      <button class="btn-lg btn-success" type="button" id="voltar1" onclick="mostrar_div2()">Proximo</button>
+            <button class="btn-lg btn-danger" type="button"id="voltar2" onclick="ocultar_div()">Voltar</button>
+    </div>
+
+
+    </div>
+
+        <div class="teste1" id="teste1">
+        <!-- input para receber cidade do usuario  -->
+        <button type="button" id="retirar_loja"> <i class="far fa-circle" id="circle"></i></i> Retirar na loja</button>
+        
+        <button type="button" id="btn_endereco"> <i class="far fa-circle" id="circle"></i></i></button>
+
+        <button type="button" id="btnaddadress"><i class="fas fa-plus" id="adicionar_endereco"></i></i></i> Adicionar endereço</button>
+        
+        <div class="d-grid gap-2">
+      <button class="btn-lg btn-success" type="button" id="proximo2" onclick="mostrar_div()">Proximo</button>
+      
+    </div>
+
+    <div class="teste4" id="teste4">
+        <!-- input para receber cidade do usuario  -->
+        <button type="button" id="retirar_loja"> <i class="far fa-circle" id="circle"></i></i> Retirar na loja</button>
+        
+        <button type="button" id="btn_endereco"> <i class="far fa-circle" id="circle"></i></i></button>
+
+        <button type="button" id="btnaddadress"><i class="fas fa-plus" id="adicionar_endereco"></i></i></i> Adicionar endereço</button>
+        
+        <div class="d-grid gap-2">
+      <button class="btn-lg btn-success" type="button" id="proximo2" onclick="mostrar_div()">Proximo</button>
+      
+    </div>
+
+        <!-- botão para enviar os dados -->
+
+    </div>
+
+    </form>
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

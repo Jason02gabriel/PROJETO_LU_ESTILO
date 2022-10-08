@@ -116,6 +116,10 @@ body {
     align-items: center;
 }
 
+
+#qtd_pedido{
+   color: red;
+}
 /* Pagina Principal(Home Page)*/
 
 #hero {
