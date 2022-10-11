@@ -82,7 +82,7 @@ function adiciona_carrinho(){
     
         contador++;
         document.getElementById('qtd_pedido').innerHTML = contador;
-    
+        
 
 
 
